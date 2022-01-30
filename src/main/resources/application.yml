@@ -1,0 +1,28 @@
+#server port
+server:
+  port: 9090
+
+#Database Config
+spring:  datasource:    url: jdbc:mysql://localhost:3306/User_MANAGEMENT_SYSTEM #jdbc:oracle:thin:@localhost:1521/XE
+    username: root #system
+    password: root #system
+    driver-class-name: com.mysql.cj.jdbc.Driver #oracle.jdbc.driver.OracleDriver
+  jpa:    hibernate:      ddl-auto: update
+    show-sql: true
+    properties:      hibernate.format_sql: true
+  mail:    host: smtp.gmail.com
+    port: 587
+    username: noreplyjrtp@gmail.com
+    password: Jrtp@0018
+    properties:      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+            
+#Custom Properties
+reg-app:
+  messages:
+    reg-email-subject: Your Registration Completed Successfully
+    reg-email-filename: UNLOCK-ACC-EMAIL-BODY-TEMPLATE.txt 

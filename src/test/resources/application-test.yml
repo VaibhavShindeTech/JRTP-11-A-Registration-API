@@ -1,0 +1,15 @@
+#server port
+server:
+  port: 9090
+
+#Database Config
+spring:
+  mail:    host: smtp.gmail.com
+    port: 587
+    username: noreplyjrtp@gmail.com
+    password: Jrtp@0018
+    properties:      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
